@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AZ3D - Impressão 3D</title>
+  <title>AZ3D - Soluções Personalizadas</title>
 
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #0f172a;
+      background: #020617;
       color: white;
     }
 
     header {
       text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      padding: 100px 20px;
+      background: radial-gradient(circle at top, #1e293b, #020617);
     }
 
     h1 {
@@ -24,14 +24,20 @@
       margin-bottom: 10px;
     }
 
+    .highlight {
+      color: #22c55e;
+    }
+
     p {
       color: #cbd5f5;
+      max-width: 600px;
+      margin: auto;
     }
 
     .btn {
       display: inline-block;
-      margin: 10px;
-      padding: 15px 25px;
+      margin: 15px 10px;
+      padding: 15px 30px;
       border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
@@ -44,8 +50,8 @@
     }
 
     .instagram {
-      background: #E1306C;
-      color: white;
+      border: 1px solid #e1306c;
+      color: #e1306c;
     }
 
     .btn:hover {
@@ -53,31 +59,33 @@
     }
 
     section {
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
     }
 
-    .services, .gallery {
+    .grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 20px;
+      gap: 25px;
     }
 
     .card {
-      background: #1e293b;
+      background: #0f172a;
       padding: 25px;
       border-radius: 15px;
-      width: 250px;
+      width: 260px;
       transition: 0.3s;
+      border: 1px solid #1e293b;
     }
 
     .card:hover {
       transform: translateY(-10px);
+      border-color: #22c55e;
     }
 
     .gallery img {
-      width: 250px;
+      width: 260px;
       border-radius: 15px;
       transition: 0.3s;
     }
@@ -87,13 +95,12 @@
     }
 
     footer {
+      padding: 30px;
       text-align: center;
-      padding: 20px;
       background: #020617;
-      color: #94a3b8;
+      color: #64748b;
     }
 
-    /* botão flutuante */
     .floating {
       position: fixed;
       bottom: 20px;
@@ -111,61 +118,68 @@
 <body>
 
 <header>
-  <h1>AZ3D</h1>
-  <p>Peças personalizadas em impressão 3D com alta qualidade</p>
+  <h1>Soluções <span class="highlight">Personalizadas</span></h1>
+  <p>
+    Transformamos ideias em realidade através de design, modelagem 3D e fabricação sob medida.
+  </p>
 
   <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento" target="_blank">
-    WhatsApp
+    Falar no WhatsApp
   </a>
 
   <a class="btn instagram" href="https://instagram.com/az3d_oficial" target="_blank">
-    Instagram
+    Ver Instagram
   </a>
 </header>
 
 <section>
-  <h2>Serviços</h2>
+  <h2>O que fazemos</h2>
 
-  <div class="services">
-    <div class="card">Impressão 3D sob medida</div>
-    <div class="card">Prototipagem rápida</div>
-    <div class="card">Modelagem 3D</div>
-    <div class="card">Peças personalizadas</div>
+  <div class="grid">
+    <div class="card">Prototipagem de projetos</div>
+    <div class="card">Modelagem 3D personalizada</div>
+    <div class="card">Peças técnicas e funcionais</div>
+    <div class="card">Lembranças e brindes</div>
+    <div class="card">Brinquedos personalizados</div>
+    <div class="card">Soluções sob medida</div>
   </div>
 </section>
 
 <section>
-  <h2>Alguns trabalhos</h2>
+  <h2>Projetos realizados</h2>
 
-  <div class="gallery">
-    <img src="https://via.placeholder.com/300" alt="">
-    <img src="https://via.placeholder.com/300" alt="">
-    <img src="https://via.placeholder.com/300" alt="">
+  <div class="grid gallery">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
+    <img src="https://via.placeholder.com/300">
   </div>
 
-  <p style="margin-top:20px;">(Coloque aqui fotos reais — isso é o que mais vende)</p>
-</section>
-
-<section>
-  <h2>Por que escolher a AZ3D?</h2>
-  <p>
-    ✔ Alta qualidade<br>
-    ✔ Entrega rápida em Salvador<br>
-    ✔ Atendimento direto<br>
-    ✔ Projetos personalizados
+  <p style="margin-top:20px;">
+    Cada projeto é único. Aqui estão alguns exemplos do que já criamos.
   </p>
 </section>
 
 <section>
-  <h2>Solicite um orçamento</h2>
+  <h2>Por que escolher a AZ3D?</h2>
 
-  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Quero%20um%20orçamento" target="_blank">
-    Pedir agora
+  <p>
+    ✔ Soluções completas, não apenas impressão<br>
+    ✔ Atendimento rápido e direto<br>
+    ✔ Projetos personalizados para qualquer necessidade<br>
+    ✔ Qualidade e atenção aos detalhes
+  </p>
+</section>
+
+<section>
+  <h2>Vamos tirar sua ideia do papel?</h2>
+
+  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Tenho%20uma%20ideia%20e%20quero%20tirar%20do%20papel" target="_blank">
+    Começar agora
   </a>
 </section>
 
 <footer>
-  <p>© 2026 - AZ3D Impressão 3D</p>
+  <p>© 2026 - AZ3D Soluções Personalizadas</p>
 </footer>
 
 <a class="floating" href="https://wa.me/5571992905495" target="_blank">💬</a>
