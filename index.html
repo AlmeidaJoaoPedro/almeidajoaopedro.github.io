@@ -8,56 +8,102 @@
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: #0f172a;
       color: white;
-      text-align: center;
     }
 
     header {
-      padding: 60px 20px;
-      background: linear-gradient(135deg, #1e293b, #0f172a);
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
     }
 
     h1 {
-      font-size: 2.5em;
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5f5;
     }
 
     .btn {
       display: inline-block;
       margin: 10px;
       padding: 15px 25px;
-      border-radius: 10px;
+      border-radius: 12px;
       text-decoration: none;
-      color: white;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     .whatsapp {
       background: #25D366;
+      color: white;
     }
 
     .instagram {
       background: #E1306C;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: scale(1.08);
     }
 
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .services, .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
 
     .card {
       background: #1e293b;
-      padding: 20px;
-      margin: 10px;
-      border-radius: 10px;
-      display: inline-block;
-      width: 220px;
+      padding: 25px;
+      border-radius: 15px;
+      width: 250px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .gallery img {
+      width: 250px;
+      border-radius: 15px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
     }
 
     footer {
+      text-align: center;
       padding: 20px;
       background: #020617;
       color: #94a3b8;
+    }
+
+    /* botão flutuante */
+    .floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      padding: 15px;
+      border-radius: 50%;
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
     }
   </style>
 </head>
@@ -66,7 +112,7 @@
 
 <header>
   <h1>AZ3D</h1>
-  <p>Impressão 3D sob medida em Salvador</p>
+  <p>Peças personalizadas em impressão 3D com alta qualidade</p>
 
   <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento" target="_blank">
     WhatsApp
@@ -80,29 +126,49 @@
 <section>
   <h2>Serviços</h2>
 
-  <div class="card">Impressão 3D</div>
-  <div class="card">Prototipagem</div>
-  <div class="card">Modelagem 3D</div>
-  <div class="card">Peças personalizadas</div>
+  <div class="services">
+    <div class="card">Impressão 3D sob medida</div>
+    <div class="card">Prototipagem rápida</div>
+    <div class="card">Modelagem 3D</div>
+    <div class="card">Peças personalizadas</div>
+  </div>
+</section>
+
+<section>
+  <h2>Alguns trabalhos</h2>
+
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300" alt="">
+    <img src="https://via.placeholder.com/300" alt="">
+    <img src="https://via.placeholder.com/300" alt="">
+  </div>
+
+  <p style="margin-top:20px;">(Coloque aqui fotos reais — isso é o que mais vende)</p>
+</section>
+
+<section>
+  <h2>Por que escolher a AZ3D?</h2>
+  <p>
+    ✔ Alta qualidade<br>
+    ✔ Entrega rápida em Salvador<br>
+    ✔ Atendimento direto<br>
+    ✔ Projetos personalizados
+  </p>
 </section>
 
 <section>
   <h2>Solicite um orçamento</h2>
 
-  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Olá,%20quero%20um%20orçamento" target="_blank">
+  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Quero%20um%20orçamento" target="_blank">
     Pedir agora
   </a>
 </section>
 
 <footer>
-  <p>© 2026 - AZ3D</p>
+  <p>© 2026 - AZ3D Impressão 3D</p>
 </footer>
 
-<!-- BOTÃO FLUTUANTE -->
-<a href="https://wa.me/5571992905495" target="_blank"
-style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 15px; border-radius: 50%; text-decoration: none;">
-💬
-</a>
+<a class="floating" href="https://wa.me/5571992905495" target="_blank">💬</a>
 
 </body>
 </html>
