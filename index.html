@@ -3,186 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AZ3D - Soluções Personalizadas</title>
+  <title>AZ3D - Coleção Panda</title>
 
   <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #020617;
-      color: white;
+    body { margin:0; font-family:'Segoe UI'; background:#020617; color:white; }
+
+    nav {
+      padding:20px;
+      text-align:center;
+      background:#020617;
+    }
+
+    nav a {
+      margin:15px;
+      color:white;
+      text-decoration:none;
     }
 
     header {
-      text-align: center;
-      padding: 100px 20px;
-      background: radial-gradient(circle at top, #1e293b, #020617);
+      text-align:center;
+      padding:80px 20px;
     }
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
+    h1 { font-size:3em; }
 
-    .highlight {
-      color: #22c55e;
-    }
-
-    p {
-      color: #cbd5f5;
-      max-width: 600px;
-      margin: auto;
-    }
-
-    .btn {
-      display: inline-block;
-      margin: 15px 10px;
-      padding: 15px 30px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .whatsapp {
-      background: #25D366;
-      color: white;
-    }
-
-    .instagram {
-      border: 1px solid #e1306c;
-      color: #e1306c;
-    }
-
-    .btn:hover {
-      transform: scale(1.08);
-    }
-
-    section {
-      padding: 70px 20px;
-      text-align: center;
-    }
+    .highlight { color:#22c55e; }
 
     .grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      padding:40px;
     }
 
     .card {
-      background: #0f172a;
-      padding: 25px;
-      border-radius: 15px;
-      width: 260px;
-      transition: 0.3s;
-      border: 1px solid #1e293b;
+      background:#0f172a;
+      padding:20px;
+      border-radius:15px;
+      width:250px;
+      transition:0.3s;
     }
 
     .card:hover {
-      transform: translateY(-10px);
-      border-color: #22c55e;
+      transform:translateY(-10px);
     }
 
-    .gallery img {
-      width: 260px;
-      border-radius: 15px;
-      transition: 0.3s;
+    .card img {
+      width:100%;
+      border-radius:10px;
     }
 
-    .gallery img:hover {
-      transform: scale(1.05);
+    .btn {
+      display:inline-block;
+      margin:20px;
+      padding:15px 25px;
+      border-radius:10px;
+      text-decoration:none;
+      background:#25D366;
+      color:white;
     }
 
     footer {
-      padding: 30px;
-      text-align: center;
-      background: #020617;
-      color: #64748b;
+      text-align:center;
+      padding:30px;
+      color:#64748b;
     }
 
     .floating {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      padding: 15px;
-      border-radius: 50%;
-      text-decoration: none;
-      color: white;
-      font-size: 20px;
+      position:fixed;
+      bottom:20px;
+      right:20px;
+      background:#25D366;
+      padding:15px;
+      border-radius:50%;
+      color:white;
     }
   </style>
 </head>
 
 <body>
 
+<nav>
+  <a href="index.html">Coleção</a>
+  <a href="servicos.html">Serviços</a>
+  <a href="portfolio.html">Projetos</a>
+  <a href="contato.html">Contato</a>
+</nav>
+
 <header>
-  <h1>Soluções <span class="highlight">Personalizadas</span></h1>
-  <p>
-    Transformamos ideias em realidade através de design, modelagem 3D e fabricação sob medida.
-  </p>
-
-  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Olá,%20vim%20pelo%20site%20e%20quero%20um%20orçamento" target="_blank">
-    Falar no WhatsApp
-  </a>
-
-  <a class="btn instagram" href="https://instagram.com/az3d_oficial" target="_blank">
-    Ver Instagram
-  </a>
+  <h1>Coleção <span class="highlight">Pandas</span></h1>
+  <p>Complete sua coleção 🐼</p>
+  <p><b>Novos modelos todo mês</b></p>
 </header>
 
 <section>
-  <h2>O que fazemos</h2>
+  <h2 style="text-align:center;">Modelos</h2>
 
   <div class="grid">
-    <div class="card">Prototipagem de projetos</div>
-    <div class="card">Modelagem 3D personalizada</div>
-    <div class="card">Peças técnicas e funcionais</div>
-    <div class="card">Lembranças e brindes</div>
-    <div class="card">Brinquedos personalizados</div>
-    <div class="card">Soluções sob medida</div>
+
+    <div class="card">
+      <img src="img/pandarmony.jpg">
+      <h3>Pandarmony</h3>
+      <p>Paz e equilíbrio</p>
+    </div>
+
+    <div class="card">
+      <img src="img/pandarcade.jpg">
+      <h3>Pandarcade</h3>
+      <p>Estilo gamer</p>
+    </div>
+
+    <div class="card">
+      <img src="img/pandinner.jpg">
+      <h3>Pandinner</h3>
+      <p>Hora do rango 🍜</p>
+    </div>
+
+    <div class="card">
+      <img src="img/pumpanda.jpg">
+      <h3>Pumpanda</h3>
+      <p>Modo treino 💪</p>
+    </div>
+
+    <div class="card">
+      <img src="img/pandown.jpg">
+      <h3>Pandown</h3>
+      <p>Modo descanso 😴</p>
+    </div>
+
+    <div class="card">
+      <img src="img/pandream.jpg">
+      <h3>Pandream</h3>
+      <p>Sonhos grandes 🌿</p>
+    </div>
+
   </div>
+
+  <p style="text-align:center;">🔥 Quais faltam pra completar sua coleção?</p>
 </section>
 
-<section>
-  <h2>Projetos realizados</h2>
+<section style="text-align:center;">
+  <h2>Personalizados</h2>
+  <p>Fazemos brindes, lembranças e projetos sob medida</p>
 
-  <div class="grid gallery">
-    <img src="img/img1.jpg">
-    <img src="img/img2.jpg">
-    <img src="img/img3.jpg">
-  </div>
-
-  <p style="margin-top:20px;">
-    Cada projeto é único. Aqui estão alguns exemplos do que já criamos.
-  </p>
-</section>
-
-<section>
-  <h2>Por que escolher a AZ3D?</h2>
-
-  <p>
-    ✔ Soluções completas, não apenas impressão<br>
-    ✔ Atendimento rápido e direto<br>
-    ✔ Projetos personalizados para qualquer necessidade<br>
-    ✔ Qualidade e atenção aos detalhes
-  </p>
-</section>
-
-<section>
-  <h2>Vamos tirar sua ideia do papel?</h2>
-
-  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Tenho%20uma%20ideia%20e%20quero%20tirar%20do%20papel" target="_blank">
-    Começar agora
+  <a class="btn" href="https://wa.me/5571992905495?text=Quero%20personalizar">
+    Falar no WhatsApp
   </a>
 </section>
 
 <footer>
-  <p>© 2026 - AZ3D Soluções Personalizadas</p>
+  <p>© 2026 AZ3D</p>
 </footer>
 
-<a class="floating" href="https://wa.me/5571992905495" target="_blank">💬</a>
+<a class="floating" href="https://wa.me/5571992905495">💬</a>
 
 </body>
 </html>
