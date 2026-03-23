@@ -3,81 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AZ3D - Coleção Panda</title>
+  <title>AZ3D - Coleção de Pandas</title>
 
   <style>
-    body { margin:0; font-family:'Segoe UI'; background:#020617; color:white; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff7ed;
+      color: #333;
+    }
 
     nav {
-      padding:20px;
-      text-align:center;
-      background:#020617;
+      background: #ffcc00;
+      padding: 15px;
+      text-align: center;
     }
 
     nav a {
-      margin:15px;
-      color:white;
-      text-decoration:none;
+      margin: 10px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     header {
-      text-align:center;
-      padding:80px 20px;
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #ff914d, #ffcc70);
+      color: white;
     }
 
-    h1 { font-size:3em; }
-
-    .highlight { color:#22c55e; }
-
-    .grid {
-      display:flex;
-      flex-wrap:wrap;
-      justify-content:center;
-      gap:20px;
-      padding:40px;
-    }
-
-    .card {
-      background:#0f172a;
-      padding:20px;
-      border-radius:15px;
-      width:250px;
-      transition:0.3s;
-    }
-
-    .card:hover {
-      transform:translateY(-10px);
-    }
-
-    .card img {
-      width:100%;
-      border-radius:10px;
+    h1 {
+      font-size: 2.8em;
     }
 
     .btn {
-      display:inline-block;
-      margin:20px;
-      padding:15px 25px;
-      border-radius:10px;
-      text-decoration:none;
-      background:#25D366;
-      color:white;
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: 0.3s;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: white;
+    }
+
+    .instagram {
+      background: #e1306c;
+      color: white;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      width: 220px;
+      padding: 15px;
+      box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .highlight {
+      font-size: 1.2em;
+      color: #ff6600;
+      font-weight: bold;
     }
 
     footer {
-      text-align:center;
-      padding:30px;
-      color:#64748b;
+      background: #ffcc00;
+      padding: 20px;
+      text-align: center;
     }
 
     .floating {
-      position:fixed;
-      bottom:20px;
-      right:20px;
-      background:#25D366;
-      padding:15px;
-      border-radius:50%;
-      color:white;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      padding: 20px;
+      border-radius: 50%;
+      color: white;
+      font-size: 22px;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -85,75 +121,94 @@
 <body>
 
 <nav>
-  <a href="index.html">Coleção</a>
-  <a href="servicos.html">Serviços</a>
-  <a href="portfolio.html">Projetos</a>
-  <a href="contato.html">Contato</a>
+  <a href="index.html">🐼 Coleção</a>
+  <a href="servicos.html">🎁 Serviços</a>
+  <a href="portfolio.html">📸 Projetos</a>
+  <a href="contato.html">📞 Contato</a>
 </nav>
 
 <header>
-  <h1>Coleção <span class="highlight">Pandas</span></h1>
-  <p>Complete sua coleção 🐼</p>
-  <p><b>Novos modelos todo mês</b></p>
+  <h1>🐼 Coleção de Pandas</h1>
+  <p>Descubra, colecione e complete todos!</p>
+
+  <p class="highlight">🔥 Novos pandas todo mês!</p>
+
+  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20um%20panda">
+    💬 Comprar no WhatsApp
+  </a>
+
+  <a class="btn instagram" href="https://instagram.com/az3d_oficial">
+    📸 Ver no Instagram
+  </a>
 </header>
 
 <section>
-  <h2 style="text-align:center;">Modelos</h2>
+  <h2>🎯 Escolha seus pandas</h2>
 
   <div class="grid">
 
     <div class="card">
       <img src="img/pandarmony.jpg">
       <h3>Pandarmony</h3>
-      <p>Paz e equilíbrio</p>
+      <p>Paz e tranquilidade 🧘</p>
     </div>
 
     <div class="card">
       <img src="img/pandarcade.jpg">
       <h3>Pandarcade</h3>
-      <p>Estilo gamer</p>
+      <p>Gamer 🎮</p>
     </div>
 
     <div class="card">
       <img src="img/pandinner.jpg">
       <h3>Pandinner</h3>
-      <p>Hora do rango 🍜</p>
+      <p>Comilão 🍜</p>
     </div>
 
     <div class="card">
       <img src="img/pumpanda.jpg">
       <h3>Pumpanda</h3>
-      <p>Modo treino 💪</p>
+      <p>Fortão 💪</p>
     </div>
 
     <div class="card">
       <img src="img/pandown.jpg">
       <h3>Pandown</h3>
-      <p>Modo descanso 😴</p>
+      <p>Soneca 😴</p>
     </div>
 
     <div class="card">
       <img src="img/pandream.jpg">
       <h3>Pandream</h3>
-      <p>Sonhos grandes 🌿</p>
+      <p>Sonhador 🌿</p>
     </div>
 
   </div>
 
-  <p style="text-align:center;">🔥 Quais faltam pra completar sua coleção?</p>
+  <p class="highlight">👀 Quais ainda faltam na sua coleção?</p>
 </section>
 
-<section style="text-align:center;">
-  <h2>Personalizados</h2>
-  <p>Fazemos brindes, lembranças e projetos sob medida</p>
+<section>
+  <h2>🎉 Quer para festa ou lembrancinha?</h2>
 
-  <a class="btn" href="https://wa.me/5571992905495?text=Quero%20personalizar">
-    Falar no WhatsApp
+  <p>
+    Fazemos chaveiros personalizados para aniversários, eventos e brindes!  
+    Perfeito para presentear crianças 🎁
+  </p>
+
+  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Quero%20lembrancinhas%20para%20festa">
+    🎈 Pedir lembrancinhas
+  </a>
+
+  <br><br>
+
+  <a class="btn instagram" href="https://instagram.com/az3d_oficial">
+    📸 Ver mais ideias no Instagram
   </a>
 </section>
 
 <footer>
-  <p>© 2026 AZ3D</p>
+  <p>🐼 AZ3D - Colecione todos!</p>
 </footer>
 
 <a class="floating" href="https://wa.me/5571992905495">💬</a>
