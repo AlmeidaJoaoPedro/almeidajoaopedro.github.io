@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #fff7ed;
+      background: #fffaf0;
       color: #333;
     }
 
@@ -17,6 +17,8 @@
       background: #ffcc00;
       padding: 15px;
       text-align: center;
+      position: sticky;
+      top: 0;
     }
 
     nav a {
@@ -29,7 +31,7 @@
     header {
       text-align: center;
       padding: 60px 20px;
-      background: linear-gradient(135deg, #ff914d, #ffcc70);
+      background: linear-gradient(135deg, #ff914d, #ffd166);
       color: white;
     }
 
@@ -40,27 +42,17 @@
     .btn {
       display: inline-block;
       margin: 10px;
-      padding: 15px 30px;
+      padding: 15px 25px;
       border-radius: 12px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1.1em;
       transition: 0.3s;
     }
 
-    .whatsapp {
-      background: #25D366;
-      color: white;
-    }
+    .whatsapp { background: #25D366; color: white; }
+    .instagram { background: #e1306c; color: white; }
 
-    .instagram {
-      background: #e1306c;
-      color: white;
-    }
-
-    .btn:hover {
-      transform: scale(1.1);
-    }
+    .btn:hover { transform: scale(1.1); }
 
     section {
       padding: 50px 20px;
@@ -93,7 +85,6 @@
     }
 
     .highlight {
-      font-size: 1.2em;
       color: #ff6600;
       font-weight: bold;
     }
@@ -121,28 +112,28 @@
 <body>
 
 <nav>
-  <a href="index.html">🐼 Coleção</a>
-  <a href="servicos.html">🎁 Serviços</a>
-  <a href="portfolio.html">📸 Projetos</a>
-  <a href="contato.html">📞 Contato</a>
+  <a href="#colecao">🐼 Coleção</a>
+  <a href="#servicos">🎁 Serviços</a>
+  <a href="#projetos">📸 Projetos</a>
 </nav>
 
 <header>
   <h1>🐼 Coleção de Pandas</h1>
   <p>Descubra, colecione e complete todos!</p>
 
-  <p class="highlight">🔥 Novos pandas todo mês!</p>
+  <p class="highlight">🔥 Novos modelos todo mês</p>
 
-  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Olá,%20vim%20pelo%20site%20e%20quero%20comprar%20um%20panda">
-    💬 Comprar no WhatsApp
+  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Quero%20comprar%20um%20panda">
+    💬 Comprar agora
   </a>
 
   <a class="btn instagram" href="https://instagram.com/az3d_oficial">
-    📸 Ver no Instagram
+    📸 Ver Instagram
   </a>
 </header>
 
-<section>
+<!-- COLEÇÃO -->
+<section id="colecao">
   <h2>🎯 Escolha seus pandas</h2>
 
   <div class="grid">
@@ -150,7 +141,7 @@
     <div class="card">
       <img src="img/pandarmony.jpg">
       <h3>Pandarmony</h3>
-      <p>Paz e tranquilidade 🧘</p>
+      <p>Paz 🧘</p>
     </div>
 
     <div class="card">
@@ -185,25 +176,52 @@
 
   </div>
 
-  <p class="highlight">👀 Quais ainda faltam na sua coleção?</p>
+  <p class="highlight">👀 Quais faltam na sua coleção?</p>
 </section>
 
-<section>
-  <h2>🎉 Quer para festa ou lembrancinha?</h2>
+<!-- SERVIÇOS COM IMAGEM -->
+<section id="servicos">
+  <h2>🎁 Serviços Personalizados</h2>
 
-  <p>
-    Fazemos chaveiros personalizados para aniversários, eventos e brindes!  
-    Perfeito para presentear crianças 🎁
-  </p>
+  <div class="grid">
 
-  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Quero%20lembrancinhas%20para%20festa">
-    🎈 Pedir lembrancinhas
+    <div class="card">
+      <img src="img/servico1.jpg">
+      <h3>Lembrancinhas</h3>
+      <p>Perfeito para festas 🎉</p>
+    </div>
+
+    <div class="card">
+      <img src="img/servico2.jpg">
+      <h3>Brindes</h3>
+      <p>Para empresas e eventos 🎁</p>
+    </div>
+
+    <div class="card">
+      <img src="img/servico3.jpg">
+      <h3>Projetos 3D</h3>
+      <p>Ideias que viram realidade 🧠</p>
+    </div>
+
+  </div>
+
+  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Quero%20lembrancinhas">
+    🎈 Pedir para festa
   </a>
+</section>
 
-  <br><br>
+<!-- PROJETOS -->
+<section id="projetos">
+  <h2>📸 Alguns trabalhos</h2>
 
-  <a class="btn instagram" href="https://instagram.com/az3d_oficial">
-    📸 Ver mais ideias no Instagram
+  <div class="grid">
+    <img src="img/pandarmony.jpg" width="200">
+    <img src="img/pandarcade.jpg" width="200">
+    <img src="img/pandinner.jpg" width="200">
+  </div>
+
+  <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Gostei%20dos%20projetos">
+    💬 Quero algo assim
   </a>
 </section>
 
