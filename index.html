@@ -73,14 +73,20 @@
       padding: 15px;
       box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
       transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .card:hover {
       transform: translateY(-10px);
     }
 
+    /* 🔥 CORREÇÃO AQUI */
     .card img {
       width: 100%;
+      height: 180px;
+      object-fit: cover;
       border-radius: 10px;
     }
 
@@ -124,7 +130,7 @@
   <p class="highlight">🔥 Novos modelos todo mês</p>
 
   <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Quero%20comprar%20um%20panda">
-    💬 Comprar agora
+    💬 Whatsapp
   </a>
 
   <a class="btn instagram" href="https://instagram.com/az3d_oficial">
@@ -134,7 +140,11 @@
 
 <!-- COLEÇÃO -->
 <section id="colecao">
-  <h2>🎯 Escolha seus pandas</h2>
+  <h2>🐼 Comece sua coleção</h2>
+
+  <p class="highlight" style="font-size: 1.5em;">
+    🔥 Colecione todos os pandas e descubra novos modelos todo mês!
+  </p>
 
   <div class="grid">
 
@@ -176,10 +186,10 @@
 
   </div>
 
-  <p class="highlight">👀 Quais faltam na sua coleção?</p>
+  <p class="highlight" style="font-size: 1.5em;">👀 Quais faltam na sua coleção?</p>
 </section>
 
-<!-- SERVIÇOS COM IMAGEM -->
+<!-- SERVIÇOS -->
 <section id="servicos">
   <h2>🎁 Serviços Personalizados</h2>
 
@@ -199,14 +209,14 @@
 
     <div class="card">
       <img src="img/servico3.jpg">
-      <h3>Projetos 3D</h3>
-      <p>Ideias que viram realidade 🧠</p>
+      <h3>Peças de Reposição</h3>
+      <p>Soluções de Engenharia 🧠</p>
     </div>
 
   </div>
 
   <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Quero%20lembrancinhas">
-    🎈 Pedir para festa
+    💬 ENTRAR EM CONTATO!
   </a>
 </section>
 
@@ -221,7 +231,7 @@
   </div>
 
   <a class="btn whatsapp" href="https://wa.me/5571992905495?text=Gostei%20dos%20projetos">
-    💬 Quero algo assim
+    💬 QUERO ALGO ASSIM!
   </a>
 </section>
 
